@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddController">
+   <children>
+      <Text layoutX="48.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ mới" wrappingWidth="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giải nghĩa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="target" layoutX="132.0" layoutY="14.0" prefHeight="42.0" prefWidth="180.0" />
+      <Button fx:id="buttonOk" layoutX="210.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#buttonOk_click" text="OK" />
+      <Button fx:id="buttonCancel" layoutX="349.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#buttonCancel_click" text="Cancel" />
+      <TextArea fx:id="explain" layoutX="132.0" layoutY="79.0" prefHeight="167.0" prefWidth="343.0" />
+   </children>
+</AnchorPane>

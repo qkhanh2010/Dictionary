@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextField fx:id="word_target" layoutX="33.0" layoutY="33.0" onKeyReleased="#autoSearch" prefHeight="43.0" prefWidth="208.0" />
+      <TextArea fx:id="word_explain" layoutX="252.0" layoutY="98.0" prefHeight="335.0" prefWidth="335.0" />
+      <ListView fx:id="listView" layoutX="33.0" layoutY="98.0" onMouseClicked="#listView_click" prefHeight="335.0" prefWidth="208.0" />
+      <Button id="search" fx:id="buttonSearch" layoutX="252.0" layoutY="39.0" mnemonicParsing="false" onAction="#buttonSearch_click" prefHeight="31.0" prefWidth="97.0" text="Tìm kiếm" />
+      <Button id="add" fx:id="buttonAdd" layoutX="252.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#buttonAdd_click" prefHeight="43.0" prefWidth="64.0" text="Thêm" />
+      <Button id="delete" fx:id="buttonDelete" layoutX="388.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#buttonDelete_click" prefHeight="43.0" prefWidth="64.0" text="Xóa" />
+      <Button id="change" fx:id="buttonChange" layoutX="522.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#buttonChange_click" prefHeight="43.0" prefWidth="64.0" text="Sửa" />
+   </children>
+</AnchorPane>
